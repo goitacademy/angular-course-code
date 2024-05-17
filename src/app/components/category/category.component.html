@@ -1,1 +1,29 @@
-<p>category works!</p>
+<table
+  mat-table
+  [dataSource]="dataSource"
+  class="mat-elevation-z8 question-table"
+>
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th mat-header-cell *matHeaderCellDef>№</th>
+    <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+  </ng-container>
+
+  <!-- Question Column -->
+  <ng-container matColumnDef="question">
+    <th mat-header-cell *matHeaderCellDef>Question</th>
+    <td mat-cell *matCellDef="let element">{{ element.question }}</td>
+  </ng-container>
+
+  <!-- Actions Column -->
+  <ng-container matColumnDef="actions">
+    <th mat-header-cell *matHeaderCellDef></th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-flat-button color="primary" class="text-uppercase">Generate Answer</button>
+      <button mat-button color="warn" class="text-uppercase">Delete</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

@@ -1,14 +1,18 @@
-<main class="main">
-  <div class="content">
-    <app-top-menu></app-top-menu>
-    <div class="app-container">
-      <app-left-side-menu></app-left-side-menu>
-      <div class="content-area">
-        <router-outlet></router-outlet>
-        <!-- This will render the component based on the route -->
-      </div>
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav mode="side" opened="true" class="sidenav">
+    <div class="side-bar-title">
+      <h2>Categories</h2>
     </div>
-  </div>
-</main>
+    <app-left-side-menu></app-left-side-menu>
+  </mat-sidenav>
 
-<router-outlet />
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <a mat-list-item routerLink="/home">Interview preparation</a>
+    </mat-toolbar>
+    <app-top-menu></app-top-menu>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

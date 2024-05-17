@@ -1,0 +1,31 @@
+.question-table {
+  width: 100%;
+}
+
+.mat-column-position {
+  width: 32px;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-question {
+  padding-left: 16px;
+  font-size: 18px;
+}
+
+.mat-column-actions {
+  white-space: nowrap; // Prevents content from wrapping to a new line
+  text-align: right; // Aligns the content to the right of the cell
+
+  button {
+    margin-right: 8px; // Adds margin to the right of each button
+  }
+
+  button:last-child {
+    margin-right: 0; // Removes margin from the last button
+  }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
