@@ -2,6 +2,7 @@ export interface CategoryQuestionItem {
   position: number;
   question: string;
   actions: string[];
+  answer?: string;
 }
 
 export const MOCK_DATA: CategoryQuestionItem[] = [

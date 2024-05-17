@@ -19,8 +19,8 @@
   <ng-container matColumnDef="actions">
     <th mat-header-cell *matHeaderCellDef></th>
     <td mat-cell *matCellDef="let element">
-      <button mat-flat-button color="primary" class="text-uppercase">Generate Answer</button>
-      <button mat-button color="warn" class="text-uppercase">Delete</button>
+      <button mat-flat-button color="primary" class="text-uppercase" (click)="openGenerateDialog(element)">Generate Answer</button>
+      <button mat-button color="warn" class="text-uppercase" (click)="openDeleteDialog(element)">Delete</button>
     </td>
   </ng-container>
 

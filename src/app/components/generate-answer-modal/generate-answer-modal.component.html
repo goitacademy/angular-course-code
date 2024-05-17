@@ -1,1 +1,16 @@
-<p>generate-answer-modal works!</p>
+<h2 class="modal-header">{{ data.question }}</h2>
+
+<!-- Conditional rendering of answer or spinner -->
+<ng-container *ngIf="isLoading; else content">
+  <div class="modal-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</ng-container>
+
+<ng-template #content>
+  <p clas="modal-content">{{ data.answer }}</p>
+  <div class="modal-actions">
+    <button mat-button color="accent" (click)="regenerateAnswer()">REGENERATE</button>
+    <button mat-flat-button color="primary" (click)="saveAnswer()">SAVE</button>
+  </div>
+</ng-template>
