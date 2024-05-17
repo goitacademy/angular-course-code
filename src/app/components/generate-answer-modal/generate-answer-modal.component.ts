@@ -1,14 +1,15 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { CategoryQuestionItem } from '../category/category.component.config';
+import { QuestionItem } from '../category/category.component.config';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CommonModule } from '@angular/common';
+import { TypingAnimationDirective } from '../../directives/typing-animation.directive';
 
 @Component({
   selector: 'app-generate-answer-modal',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatProgressSpinnerModule],
+  imports: [CommonModule, MatButtonModule, MatProgressSpinnerModule, TypingAnimationDirective],
   templateUrl: './generate-answer-modal.component.html',
   styleUrl: './generate-answer-modal.component.scss',
 })
@@ -18,7 +19,7 @@ export class GenerateAnswerModalComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<GenerateAnswerModalComponent>,
     @Inject(MAT_DIALOG_DATA)
-    public data: Pick<CategoryQuestionItem, 'question' | 'answer'>
+    public data: Pick<QuestionItem, 'question' | 'answer'>
   ) {}
 
   ngOnInit(): void {
