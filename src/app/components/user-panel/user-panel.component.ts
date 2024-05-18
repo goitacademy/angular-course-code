@@ -1,50 +1,59 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { Observable, of } from 'rxjs';
+import { MatDialog } from '@angular/material/dialog';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { SignInModalComponent } from '../sign-in-modal/sign-in-modal.component';
 import { SignUpModalComponent } from '../sign-up-modal/sign-up-modal.component';
-import { MatDialog } from '@angular/material/dialog';
+import { StorageService } from '../../services/storage.service';
+import { jwtDecode } from 'jwt-decode';
 
 @Component({
   selector: 'app-user-panel',
   standalone: true,
   imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './user-panel.component.html',
-  styleUrl: './user-panel.component.scss',
+  styleUrls: ['./user-panel.component.scss'],
 })
-export class UserPanelComponent {
-  // user$ = of({ firstName: 'Antony', lastName: 'Fox' });
-  user$: Observable<{firstName: string, lastName: string}> = of();
+export class UserPanelComponent implements OnInit {
+  user$: Observable<{ firstName: string; lastName: string } | null>;
 
-  constructor( private dialog: MatDialog) {}
+  constructor(
+    private dialog: MatDialog,
+    private storageService: StorageService
+  ) {
+    this.user$ = this.storageService.getTokenObservable().pipe(
+      map((token) => {
+        if (token) {
+          const parsedPoken = jwtDecode(token) as any;
+          return {
+            firstName: parsedPoken?.firstName,
+            lastName: parsedPoken?.lastName,
+          };
+        } else {
+          return null;
+        }
+      })
+    );
+  }
+
+  ngOnInit(): void {}
 
   signOut(): void {
-    // Implement Signout
+    this.storageService.removeToken();
   }
 
   openSignInModal(): void {
     const dialogRef = this.dialog.open(SignInModalComponent, {
       width: '400px',
     });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result) {
-        // Call the service
-      }
-    });
   }
 
   openSignUpModal(): void {
     const dialogRef = this.dialog.open(SignUpModalComponent, {
       width: '400px',
-    });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      if (result) {
-        // Call the service
-      }
     });
   }
 }
