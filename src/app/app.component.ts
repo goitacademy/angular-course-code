@@ -10,12 +10,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { UserPanelComponent } from './components/user-panel/user-panel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
+    HttpClientModule,
     MatSidenavModule,
     MatToolbarModule,
     CategoryComponent,

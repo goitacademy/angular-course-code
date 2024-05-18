@@ -5,11 +5,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CommonModule } from '@angular/common';
 import { TypingAnimationDirective } from '../../directives/typing-animation.directive';
+import { OpenAiIntegrationService } from '../../services/open-ai-integration.service';
+import { catchError, of } from 'rxjs';
 
 @Component({
   selector: 'app-generate-answer-modal',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatProgressSpinnerModule, TypingAnimationDirective],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatProgressSpinnerModule,
+    TypingAnimationDirective,
+  ],
   templateUrl: './generate-answer-modal.component.html',
   styleUrl: './generate-answer-modal.component.scss',
 })
@@ -19,7 +26,8 @@ export class GenerateAnswerModalComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<GenerateAnswerModalComponent>,
     @Inject(MAT_DIALOG_DATA)
-    public data: Pick<QuestionItem, 'question' | 'answer'>
+    public data: Pick<QuestionItem, 'question' | 'answer'>,
+    public openApi: OpenAiIntegrationService
   ) {}
 
   ngOnInit(): void {
@@ -28,13 +36,20 @@ export class GenerateAnswerModalComponent implements OnInit {
     }
   }
   regenerateAnswer() {
-    // TODO - call the service 
     this.isLoading = true;
-    // Simulate an API call or any asynchronous operation
-    setTimeout(() => {
-      this.data.answer = "New generated answer based on some API call or logic";
-      this.isLoading = false;  // Set to false once the data is updated
-    }, 2000);
+    this.openApi
+      .generateAnswerForQuestion(this.data.question)
+      .pipe(
+        catchError((err) => {
+          console.warn(err);
+          this.isLoading = false;
+          return of('Error with OpenAI integration');
+        })
+      )
+      .subscribe((response) => {
+        this.data.answer = response;
+        this.isLoading = false;
+      });
   }
 
   saveAnswer() {

@@ -1,0 +1,9 @@
+export interface Response<T> {
+  data: T;
+  error?: string;
+}
+
+export interface ResponseArray<T> {
+  data: T[];
+  error?: string;
+}
