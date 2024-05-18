@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { TopMenuComponent } from './components/top-menu/top-menu.component';
 import { LeftSideMenuComponent } from './components/left-side-menu/left-side-menu.component';
 import { CategoryComponent } from './components/category/category.component';
@@ -15,7 +14,6 @@ import { UserPanelComponent } from './components/user-panel/user-panel.component
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet,
     MatSidenavModule,
     MatToolbarModule,
     CategoryComponent,
@@ -31,5 +29,4 @@ import { UserPanelComponent } from './components/user-panel/user-panel.component
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular-course-code';
 }
