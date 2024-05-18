@@ -3,22 +3,22 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { QuestionItem } from './category.component.config';
 import { MatDialog } from '@angular/material/dialog';
-import { GenerateAnswerModalComponent } from '../generate-answer-modal/generate-answer-modal.component';
 import { DeleteConfirmationModalComponent } from '../delete-confirmation-modal/delete-confirmation-modal.component';
 import { ActivatedRoute } from '@angular/router';
 import { Subject, switchMap, takeUntil } from 'rxjs';
 import { CategoriesService } from '../../services/categories.service';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { TruncatePipe } from '../../pipes/truncate.pipe';
 
 @Component({
   selector: 'app-category',
   standalone: true,
-  imports: [MatTableModule, MatButtonModule, MatProgressSpinnerModule],
+  imports: [MatTableModule, MatButtonModule, MatProgressSpinnerModule, TruncatePipe],
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',
 })
 export class CategoryComponent implements OnInit, OnDestroy {
-  displayedColumns: string[] = ['position', 'question', 'actions'];
+  displayedColumns: string[] = ['position', 'question', 'answer', 'actions'];
   dataSource = new MatTableDataSource<QuestionItem>();
   category: string = '';
   isLoading = false;
@@ -52,41 +52,12 @@ export class CategoryComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
-  updateAnswer(
-    categoryName: string,
-    question: Partial<QuestionItem>,
-    id: number
-  ): void {
-    this.categoriesService
-      .updateCategoryQuestionById(categoryName, question, id)
-      .subscribe((response) => {
-        console.log(response);
-      });
-  }
-
   deleteAnswer(categoryName: string, id: number): void {
     this.categoriesService
       .deleteCategoryQuestionById(categoryName, id)
       .subscribe((response) => {
         console.log(response);
       });
-  }
-
-  openGenerateDialog(question: QuestionItem): void {
-    const dialogRef = this.dialog.open(GenerateAnswerModalComponent, {
-      width: '500px',
-      data: {
-        question: question.question,
-        answer: question.answer,
-      },
-    });
-
-    dialogRef.afterClosed().subscribe((result: string) => {
-      console.log('The dialog was closed', result);
-      if (result) {
-        this.updateAnswer(this.category, { answer: result }, question.id);
-      }
-    });
   }
 
   openDeleteDialog(question: QuestionItem): void {

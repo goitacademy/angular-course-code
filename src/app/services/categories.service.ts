@@ -31,30 +31,6 @@ export class CategoriesService {
     // );
   }
 
-  updateCategoryQuestionById(
-    categoryName: string,
-    question: Partial<QuestionItem>,
-    id: number
-  ): Observable<Response<QuestionItem>> {
-    return of(
-      get(MOCK_DATA, categoryName).filter(
-        (question: QuestionItem) => question.id === id
-      )
-    ).pipe(
-      map((q) => {
-        return {
-          data: { ...q[0], ...question },
-        };
-      }),
-      delay(500)
-    );
-
-    // return this.http.patch<Response<QuestionItem>>(
-    //   `${this.baseUrl}/category/${categoryName}/${id}`,
-    //   { ...question }
-    // );
-  }
-
   deleteCategoryQuestionById(
     categoryName: string,
     id: number
