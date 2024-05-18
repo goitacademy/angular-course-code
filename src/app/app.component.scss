@@ -13,3 +13,13 @@
 .side-bar-title {
   padding: 16px;
 }
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

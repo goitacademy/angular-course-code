@@ -1,0 +1,21 @@
+<h2 class="modal-header">Sign In</h2>
+<form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="fill">
+    <mat-label>Login</mat-label>
+    <input matInput formControlName="login" required />
+    <mat-error *ngIf="login?.invalid && (login?.dirty || login?.touched)">
+      Login is required
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password" required />
+    <mat-error *ngIf="password?.invalid && (password?.dirty || password?.touched)">
+      <ng-container *ngIf="password?.hasError('required')">Password is required</ng-container>
+    </mat-error>
+  </mat-form-field>
+  <div class="actions">
+    <button mat-button type="button" (click)="onCancel()">Cancel</button>
+    <button mat-flat-button color="primary" type="submit">Sign In</button>
+  </div>
+</form>
