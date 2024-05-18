@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { QuestionItem, MOCK_DATA } from './category.component.config';
 import { MatDialog } from '@angular/material/dialog';
 import { GenerateAnswerModalComponent } from '../generate-answer-modal/generate-answer-modal.component';
 import { DeleteConfirmationModalComponent } from '../delete-confirmation-modal/delete-confirmation-modal.component';
+import { ActivatedRoute } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
+import { get } from 'lodash';
 
 @Component({
   selector: 'app-category',
@@ -13,11 +16,28 @@ import { DeleteConfirmationModalComponent } from '../delete-confirmation-modal/d
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',
 })
-export class CategoryComponent {
+export class CategoryComponent implements OnInit, OnDestroy {
   displayedColumns: string[] = ['position', 'question', 'actions'];
-  dataSource = new MatTableDataSource<QuestionItem>(MOCK_DATA);
+  dataSource = new MatTableDataSource<QuestionItem>();
 
-  constructor(public dialog: MatDialog) {}
+  private destroy$ = new Subject<void>();
+
+  constructor(public dialog: MatDialog, private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.pipe(takeUntil(this.destroy$)).subscribe((param) => {
+      // TODO - use service instead of mocks
+      const mocks = get(MOCK_DATA, param.get('categoryId') || '');
+      if (mocks) {
+        this.dataSource = mocks;
+      }
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
 
   openGenerateDialog(question: QuestionItem): void {
     const dialogRef = this.dialog.open(GenerateAnswerModalComponent, {
@@ -25,7 +45,7 @@ export class CategoryComponent {
       data: {
         question: question.question,
         answer: question.answer,
-      }
+      },
     });
 
     dialogRef.afterClosed().subscribe((result: string) => {
@@ -41,7 +61,7 @@ export class CategoryComponent {
       width: '333px',
     });
 
-    dialogRef.afterClosed().subscribe((result: boolean)=> {
+    dialogRef.afterClosed().subscribe((result: boolean) => {
       console.log('The dialog was closed', result);
       if (result) {
         console.log('Question would be deleted.', question);
