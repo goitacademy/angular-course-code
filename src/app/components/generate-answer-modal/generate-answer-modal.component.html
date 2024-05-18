@@ -1,16 +1,15 @@
 <h2 class="modal-header">{{ data.question }}</h2>
 
-<!-- Conditional rendering of answer or spinner -->
-<ng-container *ngIf="isLoading; else content">
+@if (isLoading) {
   <div class="modal-spinner">
     <mat-spinner></mat-spinner>
   </div>
-</ng-container>
-
-<ng-template #content>
-  <p *ngIf="data.answer" clas="modal-content" [appTypingAnimation]="data.answer" [typingSpeed]="50"></p>
+} @else {
+  @if (data.answer) {
+    <p class="modal-content" [appTypingAnimation]="data.answer" [typingSpeed]="50"></p>
+  }
   <div class="modal-actions">
     <button mat-button color="accent" (click)="regenerateAnswer()">REGENERATE</button>
     <button mat-flat-button color="primary" (click)="saveAnswer()">SAVE</button>
   </div>
-</ng-template>
+}

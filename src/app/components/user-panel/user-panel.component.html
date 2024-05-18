@@ -1,9 +1,10 @@
-<div class="user-panel" *ngIf="user$ | async as user; else notAuthenticated">
-  <img src="assets/default-avatar.png" alt="Avatar" class="avatar" />
-  <span>{{ user?.firstName }} {{ user?.lastName }}</span>
-  <button mat-flat-button (click)="signOut()">Logout</button>
-</div>
-<ng-template #notAuthenticated>
+@if (user$ | async) {
+  <div class="user-panel">
+    <img src="assets/default-avatar.png" alt="Avatar" class="avatar" />
+    <span>{{ (user$ | async)?.firstName }} {{ (user$ | async)?.lastName }}</span>
+    <button mat-flat-button (click)="signOut()">Logout</button>
+  </div>
+} @else {
   <button mat-flat-button color="basic" class="sign-in-button" (click)="openSignInModal()">Sign In</button>
   <button mat-flat-button color="accent" (click)="openSignUpModal()">Sign Up</button>
-</ng-template>
+}

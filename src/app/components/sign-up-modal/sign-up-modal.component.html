@@ -3,39 +3,51 @@
   <mat-form-field appearance="fill">
     <mat-label>Login</mat-label>
     <input matInput formControlName="login" required>
-    <mat-error *ngIf="login?.invalid && (login?.dirty || login?.touched)">
-      Login is required
-    </mat-error>
+    @if (login?.invalid && (login?.dirty || login?.touched)) {
+      <mat-error>Login is required</mat-error>
+    }
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Password</mat-label>
     <input matInput type="password" formControlName="password" required>
-    <mat-error *ngIf="password?.invalid && (password?.dirty || password?.touched)">
-      <ng-container *ngIf="password?.hasError('required')">Password is required</ng-container>
-      <ng-container *ngIf="password?.hasError('minlength')">Password must be at least 6 characters long</ng-container>
-    </mat-error>
+    @if (password?.invalid && (password?.dirty || password?.touched)) {
+      <mat-error>
+        @if (password?.hasError('required')) {
+          Password is required
+        }
+        @if (password?.hasError('minlength')) {
+          Password must be at least 6 characters long
+        }
+      </mat-error>
+    }
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Email</mat-label>
     <input matInput type="email" formControlName="email" required>
-    <mat-error *ngIf="email?.invalid && (email?.dirty || email?.touched)">
-      <ng-container *ngIf="email?.hasError('required')">Email is required</ng-container>
-      <ng-container *ngIf="email?.hasError('email')">Please enter a valid email address</ng-container>
-    </mat-error>
+    @if (email?.invalid && (email?.dirty || email?.touched)) {
+      <mat-error>
+        @if (email?.hasError('required')) {
+          Email is required
+        }
+        @if (email?.hasError('email')) {
+          Please enter a valid email address
+        }
+      </mat-error>
+    }
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>First Name</mat-label>
     <input matInput formControlName="firstName" required>
-    <mat-error *ngIf="firstName?.invalid && (firstName?.dirty || firstName?.touched)">
-      First Name is required
-    </mat-error>
+    @if (firstName?.invalid && (firstName?.dirty || firstName?.touched)) {
+      <mat-error>First Name is required</mat-error>
+    }
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Last Name</mat-label>
     <input matInput formControlName="lastName" required>
-    <mat-error *ngIf="lastName?.invalid && (lastName?.dirty || lastName?.touched)">
-      Last Name is required
-    </mat-error>
+    @if (lastName?.invalid && (lastName?.dirty || lastName?.touched)) {
+      <mat-error>Last Name is required</mat-error>
+    }
   </mat-form-field>
   <div class="actions">
     <button mat-button type="button" (click)="onCancel()">Cancel</button>
