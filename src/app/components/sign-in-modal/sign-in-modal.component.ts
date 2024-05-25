@@ -27,17 +27,17 @@ export class SignInModalComponent {
     public signInService: SignInService,
   ) {
     this.signInForm = this.fb.group({
-      login: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required]
     });
   }
 
   onSubmit() {
     if (this.signInForm.valid) {
-      const { login, password } = this.signInForm.value;
-      console.log('Login:', login);
+      const { email, password } = this.signInForm.value;
+      console.log('Email:', email);
       console.log('Password:', password);
-      this.signInService.login(login, password).subscribe(() => {
+      this.signInService.login(email, password).subscribe(() => {
         this.dialogRef.close(this.signInForm.value);
       });
     }
@@ -47,8 +47,8 @@ export class SignInModalComponent {
     this.dialogRef.close();
   }
 
-  get login() {
-    return this.signInForm.get('login');
+  get email() {
+    return this.signInForm.get('email');
   }
 
   get password() {

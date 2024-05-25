@@ -1,13 +1,14 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { StorageService } from './storage.service';
-import { Observable, of, tap } from 'rxjs';
+import { Observable, tap } from 'rxjs';
+import { UserRegisterResponse } from '../models/response.models';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SignUpService {
-  private apiUrl = '/auth/register';
+  private apiUrl = 'http://localhost:3000';
 
   constructor(
     private http: HttpClient,
@@ -15,38 +16,25 @@ export class SignUpService {
   ) {}
 
   register(
-    login: string,
-    password: string,
     email: string,
+    password: string,
     firstName: string,
     lastName: string
-  ): Observable<{token: string}> {
+  ): Observable<UserRegisterResponse> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const body = JSON.stringify({
-      login,
-      password,
       email,
+      password,
       firstName,
       lastName,
     });
 
-    return of({
-      token:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmlyc3ROYW1lIjoiSm9obiIsImxhc3ROYW1lIjoiRG9lIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.GWAB_djq57VNXlAagl0LoOEfl6AeIkFrxClwQV8YQu0',
-    }).pipe(
+    return this.http.post<UserRegisterResponse>(`${this.apiUrl}/register`, body, { headers }).pipe(
       tap((response) => {
-        if (response.token) {
-          this.storageService.setToken(response.token);
+        if (response.accessToken) {
+          this.storageService.setToken(response.accessToken);
         }
       })
     );
-
-    // return this.http.post<{token: string}>(this.apiUrl, body, { headers }).pipe(
-    //   tap((response) => {
-    //     if (response.token) {
-    //       this.storageService.setToken(response.token);
-    //     }
-    //   })
-    // );
   }
 }

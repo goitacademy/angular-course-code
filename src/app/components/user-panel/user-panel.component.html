@@ -1,7 +1,7 @@
 @if (user$ | async) {
   <div class="user-panel">
     <img src="assets/default-avatar.png" alt="Avatar" class="avatar" />
-    <span>{{ (user$ | async)?.firstName }} {{ (user$ | async)?.lastName }}</span>
+    <span>{{ (user$ | async)?.email }}</span>
     <button mat-flat-button (click)="signOut()">Logout</button>
   </div>
 } @else {

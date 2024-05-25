@@ -1,0 +1,2047 @@
+{
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$oZvVB68NMvW8AApvAMfUxOeImVnY8pyQUtbak.4dKBmvYEpXxE4N.",
+      "firstName": "Test",
+      "lastName": "Art",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "angular"
+    },
+    {
+      "id": 2,
+      "name": "typescript"
+    },
+    {
+      "id": 3,
+      "name": "javascript"
+    },
+    {
+      "id": 4,
+      "name": "rxjs"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "Що таке Angular?",
+      "answer": "Angular — це платформа і фреймворк для розробки динамічних веб-додатків на мові TypeScript, який підтримується командою Google. Angular забезпечує розробників інструментами та бібліотеками для створення масштабованих, підтримуваних і високопродуктивних веб-додатків. Основні можливості Angular включають декларативне програмування для створення користувацького інтерфейсу, двостороннє зв’язування даних для синхронізації між моделлю і представленням, потужну систему модулів для організації коду, підтримку форм і валідації, а також засоби для роботи з маршрутизацією та HTTP-запитами. Angular також інтегрується з іншими бібліотеками та фреймворками, що дозволяє розробникам використовувати найкращі інструменти для вирішення конкретних завдань.",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "question": "Як встановити Angular CLI?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "question": "Що таке компонент в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "question": "Як створити новий компонент в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "question": "Що таке модуль в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 6,
+      "question": "Що таке директива в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "question": "Що таке сервіс в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 8,
+      "question": "Що таке двостороннє зв’язування даних?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 9,
+      "question": "Що таке шаблон в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 10,
+      "question": "Як працює маршрутизація в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 11,
+      "question": "Як додати стиль до компонента в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 12,
+      "question": "Що таке інтерполяція в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 13,
+      "question": "Що таке *ngIf директива?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 14,
+      "question": "Що таке *ngFor директива?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 15,
+      "question": "Як відправити дані з одного компонента в інший?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 16,
+      "question": "Що таке property binding в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 17,
+      "question": "Що таке event binding в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 18,
+      "question": "Що таке Angular CLI і як його використовувати?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 19,
+      "question": "Що таке структурні директиви в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 20,
+      "question": "Що таке Angular шаблонний синтаксис?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 21,
+      "question": "Як створити форму в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 22,
+      "question": "Як працює ngModel?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 23,
+      "question": "Що таке валідація форм в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 24,
+      "question": "Що таке life cycle hooks в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 25,
+      "question": "Як працює Angular CLI?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 26,
+      "question": "Що таке Standalone компонент в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 27,
+      "question": "Як створити Standalone компонент?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 28,
+      "question": "Які переваги використання Standalone компонентів?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 29,
+      "question": "Що таке Deferrable Views?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 30,
+      "question": "Як використовувати @defer в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 31,
+      "question": "Які є тригери для @defer?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 32,
+      "question": "Що таке синтаксис @if в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 33,
+      "question": "Що таке синтаксис @for в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 34,
+      "question": "Що таке синтаксис @switch в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 35,
+      "question": "Як працює @defer (on viewport)?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 36,
+      "question": "Що таке анімації в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 37,
+      "question": "Як працює Dependency Injection в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 38,
+      "question": "Що таке форми в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 39,
+      "question": "Як працює реактивне програмування в Angular з RxJS?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 40,
+      "question": "Що таке Change Detection в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 41,
+      "question": "Що таке HttpClientModule і як його використовувати?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 42,
+      "question": "Як реалізувати lazy loading в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 43,
+      "question": "Що таке pipes в Angular і як їх створювати?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 44,
+      "question": "Як працює роутинг в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 45,
+      "question": "Що таке інтерцептори в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 46,
+      "question": "Як реалізувати guard в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 47,
+      "question": "Як налаштувати форми в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 48,
+      "question": "Що таке Angular Material?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 49,
+      "question": "Як працювати з Observables в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 50,
+      "question": "Що таке шаблонні змінні в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 51,
+      "question": "Як працює ViewChild і ContentChild?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 52,
+      "question": "Як працювати з реактивними формами в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 53,
+      "question": "Що таке ViewEncapsulation?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 54,
+      "question": "Як налаштувати і використовувати Angular Router?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 55,
+      "question": "Як працювати з @Input та @Output?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 56,
+      "question": "Що таке модульні тести в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 57,
+      "question": "Як використовувати Dependency Injection в компонентах?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 58,
+      "question": "Що таке продовжувані оператори в RxJS?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 59,
+      "question": "Як працює trackBy функція в ngFor?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 60,
+      "question": "Що таке OnPush Change Detection Strategy?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 61,
+      "question": "Як використовувати Router Guards?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 62,
+      "question": "Що таке RouterLinkActive?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 63,
+      "question": "Як працює Angular Service Worker?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 64,
+      "question": "Що таке Angular Animations?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 65,
+      "question": "Як налаштувати прогресивний веб-додаток (PWA) з Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 66,
+      "question": "Що таке Standalone сервіси?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 67,
+      "question": "Як створити Standalone сервіси?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 68,
+      "question": "Як використовувати @defer з @placeholder?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 69,
+      "question": "Як використовувати @defer (on idle)?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 70,
+      "question": "Що таке @defer (on timer)?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 71,
+      "question": "Як використовувати синтаксис @if з множинними умовами?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 72,
+      "question": "Що таке @switch (expression)?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 73,
+      "question": "Як комбінувати @defer з @if?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 74,
+      "question": "Які переваги використання нового синтаксису if, for та switch?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 75,
+      "question": "Як працює @defer з асинхронними даними?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 76,
+      "question": "Як працює Angular Ivy?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 77,
+      "question": "Що таке Renderer2 в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 78,
+      "question": "Як оптимізувати продуктивність додатка на Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 79,
+      "question": "Як працювати з NgZone в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 80,
+      "question": "Що таке Angular Universal і як його використовувати?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 81,
+      "question": "Що таке Ahead-of-Time (AOT) компіляція?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 82,
+      "question": "Як налаштувати і використовувати серверний рендеринг з Angular Universal?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 83,
+      "question": "Як працює ChangeDetectorRef?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 84,
+      "question": "Як створювати та використовувати бібліотеки в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 85,
+      "question": "Що таке платформи в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 86,
+      "question": "Як працювати з Web Workers в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 87,
+      "question": "Як реалізувати багатомовність в Angular додатку?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 88,
+      "question": "Що таке Service Workers і як їх використовувати в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 89,
+      "question": "Як працювати з інтерналізацією (i18n) в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 90,
+      "question": "Як реалізувати Dynamic Components в Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 91,
+      "question": "Що таке ElementRef і як його використовувати?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 92,
+      "question": "Як працювати з NgModules?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 93,
+      "question": "Що таке Angular Schematics?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 94,
+      "question": "Що таке Angular CDK?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 95,
+      "question": "Як використовувати Angular CDK для створення власних компонентів?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 96,
+      "question": "Як реалізувати Drag-and-Drop за допомогою Angular CDK?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 97,
+      "question": "Що таке Reactive Forms у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 98,
+      "question": "Як працювати з Dynamic Forms у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 99,
+      "question": "Що таке FormArray у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 100,
+      "question": "Як налаштувати асинхронну валідацію форм у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 101,
+      "question": "Як працює Virtual Scrolling у Angular CDK?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 102,
+      "question": "Що таке Portal та PortalHost у Angular CDK?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 103,
+      "question": "Як використовувати Tree компоненти з Angular CDK?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 104,
+      "question": "Як налаштувати серверний рендеринг у Angular Universal?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 105,
+      "question": "Що таке Hydration у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 106,
+      "question": "Як працювати з новими lifecycle hooks у Angular Universal?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 107,
+      "question": "Як використовувати Vite та ESBuild у нових проектах Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 108,
+      "question": "Як відлагоджувати Dependency Injection у Angular DevTools?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 109,
+      "question": "Як використовувати Standalone API у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 110,
+      "question": "Що таке Signal-based Components у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 111,
+      "question": "Як використовувати новий синтаксис @if з Reactive Forms?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 112,
+      "question": "Як оптимізувати продуктивність за допомогою @defer?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 113,
+      "question": "Як реалізувати серверний рендеринг з Angular SSR?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 114,
+      "question": "Що таке Prefetch у @defer?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 115,
+      "question": "Як працювати з Vite та ESBuild у нових проектах Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 116,
+      "question": "Як використовувати новий синтаксис @switch з Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 117,
+      "question": "Як реалізувати Deferrable Views у великому Angular проекті?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 118,
+      "question": "Як налаштувати Prefetch для покращення продуктивності?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 119,
+      "question": "Що таке стабільні сигнали у Angular 17?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 120,
+      "question": "Як використовувати Prefetch з @defer?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 121,
+      "question": "Як використовувати Standalone компоненти для спрощення архітектури?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 122,
+      "question": "Як реалізувати новий синтаксис @for для покращення продуктивності?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 123,
+      "question": "Як працювати з новими Standalone API у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 124,
+      "question": "Що таке Signal-based state management у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 125,
+      "question": "Як використовувати новий синтаксис @if з асинхронними даними?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 126,
+      "question": "Як реалізувати Prefetch з умовами @if у Angular?",
+      "answer": "",
+      "categoryId": 1
+    },
+    {
+      "id": 127,
+      "question": "Що таке TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 128,
+      "question": "Яка основна різниця між TypeScript і JavaScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 129,
+      "question": "Як встановити TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 130,
+      "question": "Як компілювати TypeScript у JavaScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 131,
+      "question": "Що таке типи в TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 132,
+      "question": "Як оголосити змінну з типом у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 133,
+      "question": "Що таке інтерфейс у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 134,
+      "question": "Як створити інтерфейс у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 135,
+      "question": "Що таке Union типи у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 136,
+      "question": "Як використовувати тип any у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 137,
+      "question": "Що таке Enum у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 138,
+      "question": "Як використовувати Enum у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 139,
+      "question": "Що таке tuple у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 140,
+      "question": "Як оголосити та використовувати tuple?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 141,
+      "question": "Що таке типи функцій у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 142,
+      "question": "Як оголосити функцію з типом у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 143,
+      "question": "Що таке Generics у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 144,
+      "question": "Як використовувати Generics у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 145,
+      "question": "Що таке void у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 146,
+      "question": "Як використовувати тип void у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 147,
+      "question": "Що таке never у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 148,
+      "question": "Як використовувати тип never у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 149,
+      "question": "Що таке типи масивів у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 150,
+      "question": "Як оголосити та використовувати масиви у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 151,
+      "question": "Що таке type assertion у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 152,
+      "question": "Що таке типова перевірка у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 153,
+      "question": "Як працює TypeScript з об'єктами?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 154,
+      "question": "Що таке розширення інтерфейсу у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 155,
+      "question": "Як реалізувати розширення інтерфейсу?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 156,
+      "question": "Що таке перетин типів у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 157,
+      "question": "Як реалізувати перетин типів?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 158,
+      "question": "Що таке декларація простору імен у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 159,
+      "question": "Як використовувати простори імен у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 160,
+      "question": "Що таке модулі у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 161,
+      "question": "Як експортувати та імпортувати модулі у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 162,
+      "question": "Що таке декларація змінних у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 163,
+      "question": "Як використовувати ключові слова let і const у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 164,
+      "question": "Що таке клас у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 165,
+      "question": "Як оголосити клас у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 166,
+      "question": "Що таке конструктор у класі TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 167,
+      "question": "Як реалізувати конструктор у класі?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 168,
+      "question": "Що таке методи класу у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 169,
+      "question": "Як оголосити та використовувати методи класу?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 170,
+      "question": "Що таке доступ до модифікаторів у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 171,
+      "question": "Як використовувати приватні та публічні модифікатори доступу?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 172,
+      "question": "Що таке статичні методи у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 173,
+      "question": "Як оголосити та використовувати статичні методи?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 174,
+      "question": "Що таке абстрактні класи у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 175,
+      "question": "Як реалізувати абстрактні класи?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 176,
+      "question": "Що таке інтерфейс для класів у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 177,
+      "question": "Що таке декоратори у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 178,
+      "question": "Як реалізувати декоратори класу?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 179,
+      "question": "Що таке декоратори властивостей?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 180,
+      "question": "Як реалізувати декоратори методів?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 181,
+      "question": "Що таке метапрограмування у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 182,
+      "question": "Як використовувати рефлексію у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 183,
+      "question": "Що таке типи утиліт у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 184,
+      "question": "Як використовувати типи утиліт (Pick, Omit, Partial)?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 185,
+      "question": "Що таке Mapped Types у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 186,
+      "question": "Як реалізувати Mapped Types?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 187,
+      "question": "Що таке Conditional Types у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 188,
+      "question": "Як використовувати Conditional Types?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 189,
+      "question": "Що таке індексні типи у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 190,
+      "question": "Як використовувати індексні типи?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 191,
+      "question": "Що таке Template Literal Types?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 192,
+      "question": "Як використовувати Template Literal Types?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 193,
+      "question": "Що таке Type Guards у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 194,
+      "question": "Як реалізувати Type Guards?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 195,
+      "question": "Що таке Advanced Types у TypeScript?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 196,
+      "question": "Як реалізувати Advanced Types?",
+      "answer": "",
+      "categoryId": 2
+    },
+    {
+      "id": 197,
+      "question": "Що таке JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 198,
+      "question": "Як оголосити змінну в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 199,
+      "question": "Що таке функція в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 200,
+      "question": "Як оголосити функцію в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 201,
+      "question": "Що таке масив в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 202,
+      "question": "Як додати елемент до масиву в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 203,
+      "question": "Що таке об’єкт в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 204,
+      "question": "Як створити об’єкт в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 205,
+      "question": "Що таке цикл в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 206,
+      "question": "Як працює цикл for в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 207,
+      "question": "Що таке умовний оператор в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 208,
+      "question": "Як працює оператор if в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 209,
+      "question": "Що таке оператор порівняння в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 210,
+      "question": "Як працює оператор === в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 215,
+      "question": "Що таке строка в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 216,
+      "question": "Як конкатенувати строки в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 217,
+      "question": "Що таке шаблонні строки в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 218,
+      "question": "Як використовувати шаблонні строки?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 219,
+      "question": "Що таке null та undefined в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 220,
+      "question": "Яка різниця між null та undefined?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 221,
+      "question": "Що таке NaN в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 222,
+      "question": "Як перевірити, чи значення є NaN?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 223,
+      "question": "Що таке замикання (closure) в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 224,
+      "question": "Як працює замикання (closure)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 225,
+      "question": "Що таке стрілочні функції в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 226,
+      "question": "Що таке прототипне наслідування в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 227,
+      "question": "Як працює прототипне наслідування?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 228,
+      "question": "Що таке контекст виконання (execution context) в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 229,
+      "question": "Як працює контекст виконання?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 230,
+      "question": "Що таке \"this\" в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 231,
+      "question": "Як працює \"this\" у різних контекстах?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 232,
+      "question": "Що таке call, apply та bind в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 233,
+      "question": "Як використовувати call, apply та bind?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 234,
+      "question": "Що таке асинхронність в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 235,
+      "question": "Як працює setTimeout у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 236,
+      "question": "Що таке проміси в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 237,
+      "question": "Як створити та використовувати проміси?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 238,
+      "question": "Що таке async/await у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 239,
+      "question": "Як використовувати async/await?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 240,
+      "question": "Що таке замикання та як його використовувати?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 241,
+      "question": "Що таке \"strict mode\" у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 242,
+      "question": "Як увімкнути \"strict mode\"?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 243,
+      "question": "Що таке \"hoisting\" у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 244,
+      "question": "Як працює \"hoisting\"?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 245,
+      "question": "Що таке модулі в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 246,
+      "question": "Як використовувати модулі (import/export)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 247,
+      "question": "Що таке IIFE (Immediately Invoked Function Expression)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 248,
+      "question": "Як використовувати IIFE?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 249,
+      "question": "Що таке Event Loop у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 250,
+      "question": "Як працює Event Loop?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 251,
+      "question": "Що таке оператор \"new\" у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 252,
+      "question": "Як працює оператор \"new\"?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 253,
+      "question": "Що таке Map та Set у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 254,
+      "question": "Як використовувати Map та Set?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 255,
+      "question": "Що таке WeakMap та WeakSet?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 256,
+      "question": "Як використовувати WeakMap та WeakSet?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 257,
+      "question": "Що таке генератори у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 258,
+      "question": "Як використовувати генератори?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 259,
+      "question": "Що таке Proxy у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 260,
+      "question": "Як працювати з Proxy?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 261,
+      "question": "Що таке символи (Symbols) у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 262,
+      "question": "Як використовувати символи?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 263,
+      "question": "Що таке Reflect у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 264,
+      "question": "Як працювати з Reflect?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 265,
+      "question": "Що таке міжнародні стандартизації (Intl) у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 266,
+      "question": "Як використовувати Intl?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 267,
+      "question": "Що таке Web Workers?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 268,
+      "question": "Як працювати з Web Workers?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 269,
+      "question": "Що таке Service Workers?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 270,
+      "question": "Як реалізувати Service Workers?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 271,
+      "question": "Що таке модулі ES6?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 272,
+      "question": "Як використовувати динамічний import?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 273,
+      "question": "Що таке метапрограмування в JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 274,
+      "question": "Як використовувати метапрограмування?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 275,
+      "question": "Що таке канали повідомлень (Message Channels)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 276,
+      "question": "Як працювати з канали повідомлень?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 277,
+      "question": "Що таке Atomics та SharedArrayBuffer?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 278,
+      "question": "Як використовувати Atomics та SharedArrayBuffer?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 279,
+      "question": "Що таке трансдюсери (Transducers)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 280,
+      "question": "Як працювати з трансдюсерами?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 281,
+      "question": "Що таке мемоізація (Memoization)?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 282,
+      "question": "Як реалізувати мемоізацію?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 283,
+      "question": "Що таке tree shaking?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 284,
+      "question": "Як працювати з tree shaking?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 285,
+      "question": "Що таке алгоритми розв’язання конфліктів?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 286,
+      "question": "Як реалізувати алгоритми розв’язання конфліктів?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 287,
+      "question": "Що таке прототипи у JavaScript?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 288,
+      "question": "Як працювати з прототипами?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 289,
+      "question": "Що таке JavaScript Engine?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 290,
+      "question": "Як працює JavaScript Engine?",
+      "answer": "",
+      "categoryId": 3
+    },
+    {
+      "id": 291,
+      "question": "Що таке RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 292,
+      "question": "Що таке Observable в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 293,
+      "question": "Як створити Observable?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 294,
+      "question": "Що таке Observer в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 295,
+      "question": "Як працює метод subscribe()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 296,
+      "question": "Що таке оператори в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 297,
+      "question": "Що таке Subject в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 298,
+      "question": "Що таке BehaviorSubject?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 299,
+      "question": "Що таке ReplaySubject?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 300,
+      "question": "Що таке AsyncSubject?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 301,
+      "question": "Що таке hot Observable?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 302,
+      "question": "Що таке cold Observable?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 303,
+      "question": "Яка різниця між hot і cold Observables?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 304,
+      "question": "Що таке операція map()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 305,
+      "question": "Що таке операція filter()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 306,
+      "question": "Що таке мультикастінг в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 307,
+      "question": "Як використовувати multicast()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 308,
+      "question": "Що таке юнікастінг в RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 309,
+      "question": "Як працювати з share()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 310,
+      "question": "Як створити кастомний оператор у RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 311,
+      "question": "Як використовувати debounceTime() у реальному проекті?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 312,
+      "question": "Що таке switchMap() і коли його використовувати?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 313,
+      "question": "Як працювати з forkJoin() для обробки кількох запитів?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 314,
+      "question": "Як обробляти помилки за допомогою catchError()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 315,
+      "question": "Що таке mergeMap() і як він відрізняється від switchMap()?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 316,
+      "question": "Як управляти підписками в Angular за допомогою RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 317,
+      "question": "Що таке оператор takeUntil() і як його використовувати?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 318,
+      "question": "Як застосовувати combineLatest() у реальних додатках?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 319,
+      "question": "Як використовувати retryWhen() для повторного запиту?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 320,
+      "question": "Що таке асинхронне програмування з RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 321,
+      "question": "Як працювати з реактивними формами в Angular за допомогою RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 322,
+      "question": "Як оптимізувати продуктивність за допомогою мультикастінгу?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 333,
+      "question": "Що таке патерн backpressure і як його обробляти?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 334,
+      "question": "Як реалізувати складні послідовності операторів у RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 335,
+      "question": "Як використовувати RxJS для обробки вебсокетів?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 336,
+      "question": "Що таке оператор finalize() і як його використовувати?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 337,
+      "question": "Як працювати з операторами higher-order mapping (mergeMap, switchMap, concatMap, exhaustMap)?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 338,
+      "question": "Як використовувати scan() для створення акумуляторів стану?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 339,
+      "question": "Як реалізувати кастомний Subject?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 340,
+      "question": "Як тестувати RxJS оператори?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 341,
+      "question": "Як використовувати RxJS у поєднанні з іншими бібліотеками (наприклад, Redux)?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 342,
+      "question": "Що таке Observable-based state management?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 343,
+      "question": "Як використовувати RxJS для обробки подій у великомасштабних додатках?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 344,
+      "question": "Як ефективно відлагоджувати RxJS оператори?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 345,
+      "question": "Що таке оператор toPromise() і коли його варто використовувати?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 346,
+      "question": "Як працювати з операторами time-based (debounceTime, throttleTime, auditTime)?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 347,
+      "question": "Як використовувати RxJS для роботи з графічним інтерфейсом?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 348,
+      "question": "Що таке flattening операції і як вони працюють?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 349,
+      "question": "Як реалізувати і обробляти асинхронні події з RxJS?",
+      "answer": "",
+      "categoryId": 4
+    },
+    {
+      "id": 350,
+      "question": "Як використовувати RxJS у прогресивних веб-додатках (PWA)?",
+      "answer": "",
+      "categoryId": 4
+    }
+  ]
+}

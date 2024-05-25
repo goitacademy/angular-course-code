@@ -18,7 +18,7 @@ import { jwtDecode } from 'jwt-decode';
   styleUrls: ['./user-panel.component.scss'],
 })
 export class UserPanelComponent implements OnInit {
-  user$: Observable<{ firstName: string; lastName: string } | null>;
+  user$: Observable<{ email: string; } | null>;
 
   constructor(
     private dialog: MatDialog,
@@ -29,8 +29,7 @@ export class UserPanelComponent implements OnInit {
         if (token) {
           const parsedPoken = jwtDecode(token) as any;
           return {
-            firstName: parsedPoken?.firstName,
-            lastName: parsedPoken?.lastName,
+            email: parsedPoken?.email,
           };
         } else {
           return null;

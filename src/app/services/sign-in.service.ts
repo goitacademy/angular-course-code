@@ -2,39 +2,29 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { StorageService } from './storage.service';
 import { Observable, of, tap } from 'rxjs';
+import { UserLoginResponse } from '../models/response.models';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SignInService {
-  private apiUrl = '/auth/login';
+  private apiUrl = 'http://localhost:3000';
 
   constructor(
     private http: HttpClient,
     private storageService: StorageService
   ) {}
 
-  login(login: string, password: string): Observable<{token: string}> {
+  login(email: string, password: string): Observable<UserLoginResponse> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    const body = JSON.stringify({ login, password });
+    const body = JSON.stringify({ email, password });
 
-    return of({
-      token:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZmlyc3ROYW1lIjoiSm9obiIsImxhc3ROYW1lIjoiRG9lIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTUxNjIzOTAyMn0.GWAB_djq57VNXlAagl0LoOEfl6AeIkFrxClwQV8YQu0',
-    }).pipe(
+    return this.http.post<UserLoginResponse>(`${this.apiUrl}/login`, body, { headers }).pipe(
       tap((response) => {
-        if (response.token) {
-          this.storageService.setToken(response.token);
+        if (response.accessToken) {
+          this.storageService.setToken(response.accessToken);
         }
       })
     );
-
-    // return this.http.post<{token: string}>(this.apiUrl, body, { headers }).pipe(
-    //   tap((response) => {
-    //     if (response.token) {
-    //       this.storageService.setToken(response.token);
-    //     }
-    //   })
-    // );
   }
 }

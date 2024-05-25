@@ -32,9 +32,8 @@ export class SignUpModalComponent {
     public signUpService: SignUpService,
   ) {
     this.signUpForm = this.fb.group({
-      login: ['', Validators.required],
-      password: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      password: ['', Validators.required],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
     });
@@ -42,8 +41,8 @@ export class SignUpModalComponent {
 
   onSubmit() {
     if (this.signUpForm.valid) {
-      const { login, password, email, firstName, lastName } = this.signUpForm.value;
-      this.signUpService.register(login, password, email, firstName, lastName).subscribe(() => {
+      const { email, password, firstName, lastName } = this.signUpForm.value;
+      this.signUpService.register(email, password, firstName, lastName).subscribe(() => {
         this.dialogRef.close(this.signUpForm.value);
       });
     }
