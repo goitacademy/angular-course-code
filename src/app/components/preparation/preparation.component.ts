@@ -6,6 +6,7 @@ import { DeleteConfirmationModalComponent } from '../delete-confirmation-modal/d
 import { MOCK_DATA } from './preparation.component.config';
 import { QuestionItem } from '../category/category.component.config';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
+import { GenerateAnswerModalComponent } from '../generate-answer-modal/generate-answer-modal.component';
 
 @Component({
   selector: 'app-preparation',
@@ -15,10 +16,27 @@ import { TruncatePipe } from '../../pipes/truncate.pipe';
   styleUrl: './preparation.component.scss',
 })
 export class PreparationComponent {
-  displayedColumns: string[] = ['position', 'question', 'answer', 'actions'];
+  displayedColumns: string[] = ['position', 'question', 'actions'];
   dataSource = new MatTableDataSource<QuestionItem>(MOCK_DATA);
 
   constructor(public dialog: MatDialog) {}
+
+  openGenerateDialog(question: QuestionItem): void {
+    const dialogRef = this.dialog.open(GenerateAnswerModalComponent, {
+      width: '500px',
+      data: {
+        question: question.question,
+        answer: question.answer,
+      }
+    });
+
+    dialogRef.afterClosed().subscribe((result: string) => {
+      console.log('The dialog was closed', result);
+      if (result) {
+        // TODO - call the service for updating an answer
+      }
+    });
+  }
 
   openDeleteDialog(question: QuestionItem): void {
     const dialogRef = this.dialog.open(DeleteConfirmationModalComponent, {

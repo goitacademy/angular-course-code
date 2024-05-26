@@ -5,36 +5,20 @@ import { QuestionItem, MOCK_DATA } from './category.component.config';
 import { MatDialog } from '@angular/material/dialog';
 import { GenerateAnswerModalComponent } from '../generate-answer-modal/generate-answer-modal.component';
 import { DeleteConfirmationModalComponent } from '../delete-confirmation-modal/delete-confirmation-modal.component';
+import { TruncatePipe } from '../../pipes/truncate.pipe';
 
 @Component({
   selector: 'app-category',
   standalone: true,
-  imports: [MatTableModule, MatButtonModule],
+  imports: [MatTableModule, MatButtonModule, TruncatePipe],
   templateUrl: './category.component.html',
   styleUrl: './category.component.scss',
 })
 export class CategoryComponent {
-  displayedColumns: string[] = ['position', 'question', 'actions'];
+  displayedColumns: string[] = ['position', 'question', 'answer', 'actions'];
   dataSource = new MatTableDataSource<QuestionItem>(MOCK_DATA);
 
   constructor(public dialog: MatDialog) {}
-
-  openGenerateDialog(question: QuestionItem): void {
-    const dialogRef = this.dialog.open(GenerateAnswerModalComponent, {
-      width: '500px',
-      data: {
-        question: question.question,
-        answer: question.answer,
-      }
-    });
-
-    dialogRef.afterClosed().subscribe((result: string) => {
-      console.log('The dialog was closed', result);
-      if (result) {
-        // TODO - call the service for updating an answer
-      }
-    });
-  }
 
   openDeleteDialog(question: QuestionItem): void {
     const dialogRef = this.dialog.open(DeleteConfirmationModalComponent, {
